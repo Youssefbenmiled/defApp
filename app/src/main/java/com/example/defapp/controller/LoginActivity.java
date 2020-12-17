@@ -54,7 +54,6 @@ public class LoginActivity extends AppCompatActivity {
         {
             Toast.makeText(getApplicationContext(),"Wrong user data",Toast.LENGTH_LONG).show();
             verif=false;
-
         }
         return verif;
 
