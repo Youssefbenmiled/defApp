@@ -41,7 +41,7 @@ public class DetailsActivity extends AppCompatActivity {
             ArrayList<String> Creators = bundle.getStringArrayList("creatorsList");
 
             String createdDate = bundle.getString("createdDate");
-            int classement = bundle.getInt("classement");
+            int rank = bundle.getInt("classement");
             String proprietaire = bundle.getString("entreprise");
             String webSite = bundle.getString("webSite");
             int color = bundle.getInt("txt_color");
@@ -52,7 +52,7 @@ public class DetailsActivity extends AppCompatActivity {
             txt_appName.setTextColor(color);
             txt_creators.setText(getCreators(Creators));
             txt_date.setText(createdDate);
-            txt_ranking.setText(String.valueOf(classement));
+            txt_ranking.setText(String.valueOf(rank));
             txt_entreprise.setText(proprietaire);
             txt_website.setText(webSite);
 
