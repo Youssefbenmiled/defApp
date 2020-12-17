@@ -12,7 +12,6 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import com.example.defapp.R;
-
 import com.example.defapp.global.Constants;
 
 public class LoginActivity extends AppCompatActivity {

@@ -1,5 +1,7 @@
 package com.example.defapp.controller;
 
+
+
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -13,9 +15,9 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.defapp.R;
-
 import com.example.defapp.global.Constants;
 import com.example.defapp.model.Application;
+
 
 import java.util.ArrayList;
 
