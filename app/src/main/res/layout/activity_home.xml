@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/tv_logout"
+        android:id="@+id/tv_disconnect"
         android:layout_alignParentEnd="true"
         android:text="@string/logout"
         android:layout_marginTop="3dp"

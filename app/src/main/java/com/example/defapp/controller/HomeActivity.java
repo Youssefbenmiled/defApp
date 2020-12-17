@@ -24,7 +24,7 @@ import java.util.ArrayList;
 public class HomeActivity extends AppCompatActivity {
 
     RecyclerView rv_list;
-    TextView logout;
+    TextView tv_logout;
     ArrayList<Application>apps=new ArrayList<>();
 
     ArrayList<String>whatsappCreators=new ArrayList<>();
@@ -42,8 +42,8 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
 
         rv_list=findViewById(R.id.rv_apps);
-        logout=findViewById(R.id.tv_logout);
-        logout.setOnClickListener(new View.OnClickListener() {
+        tv_logout=findViewById(R.id.tv_disconnect);
+        tv_logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 disconnect();
