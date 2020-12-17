@@ -46,10 +46,11 @@ public class LoginActivity extends AppCompatActivity {
     private Boolean verifyUser() {
 
         boolean verif=true;
-        String user=txt_email.getText().toString().trim();
+        String useremail=txt_email.getText().toString().trim();
         String pwd=txt_password.getText().toString().trim();
 
-        if(TextUtils.isEmpty(user) || TextUtils.isEmpty(pwd) || Patterns.EMAIL_ADDRESS.matcher(user).matches()==false)
+
+        if(pwd.length()<6 || TextUtils.isEmpty(pwd) ||TextUtils.isEmpty(useremail)|| Patterns.EMAIL_ADDRESS.matcher(useremail).matches()==false)
         {
             Toast.makeText(getApplicationContext(),"Wrong user data",Toast.LENGTH_LONG).show();
             verif=false;
