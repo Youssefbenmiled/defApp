@@ -99,34 +99,34 @@ public class HomeActivity extends AppCompatActivity {
 
         whatsappCreators.add("Jan Koum");
         whatsappCreators.add("Brian Acton");
-        apps.add(new Application(R.drawable.wahtsapp,"WhatsApp",whatsappCreators,"3 mai 2009",1,"whatsapp.com","WhatsApp Inc. (propriété de Facebook1)"));
+        apps.add(new Application(R.drawable.wahtsapp,"WhatsApp",whatsappCreators,"3 mai 2009.",1,"whatsapp.com","WhatsApp Inc. (propriété de Facebook1)"));
 
 
         faceCreators.add("Mark Zuckerberg");
         faceCreators.add("Sheryl Sandberg");
-        apps.add(new Application(R.drawable.facebook,"Facebook",faceCreators,"4 février 2004",2,"facebook.com","Facebook"));
+        apps.add(new Application(R.drawable.facebook,"Facebook",faceCreators,"4 février 2004.",2,"facebook.com","Facebook"));
 
 
         instCreators.add("Kevin Systrom");
         instCreators.add("Mike Krieger");
-        apps.add(new Application(R.drawable.instagram,"Instagram",instCreators,"6 octobre 2010",3,"instagram.com","Facebook"));
+        apps.add(new Application(R.drawable.instagram,"Instagram",instCreators,"6 octobre 2010.",3,"instagram.com","Facebook"));
 
         snapCreators.add("Evan Spiegel");
         snapCreators.add("Bobby Murphy");
-        apps.add(new Application(R.drawable.snapchat,"Snapchat",snapCreators,"8 juillet 2011",4,"snapchat.com","Snap Inc"));
+        apps.add(new Application(R.drawable.snapchat,"Snapchat",snapCreators,"8 juillet 2011.",4,"snapchat.com","Snap Inc"));
 
 
         uberCreators.add("Garrett Camp");
         uberCreators.add("Travis Kalanick");
         uberCreators.add("Oscar Salazar");
-        apps.add(new Application(R.drawable.uber,"Uber",uberCreators,"mars 2009",6,"uber.com","Uber"));
+        apps.add(new Application(R.drawable.uber,"Uber",uberCreators,"mars 2009.",6,"uber.com","Uber"));
 
 
 
         yutbCreators.add("Steve Chen");
         yutbCreators.add("Chad Hurley");
         yutbCreators.add("Jawed Karim");
-        apps.add(new Application(R.drawable.youtube,"Youtube",yutbCreators,"14 février 2005",7,"YouTube.com","Google"));
+        apps.add(new Application(R.drawable.youtube,"Youtube",yutbCreators,"14 février 2005.",7,"YouTube.com","Google"));
 
 
 
@@ -134,7 +134,7 @@ public class HomeActivity extends AppCompatActivity {
         twitCreators.add("Noah Glass");
         twitCreators.add("Biz Stone");
         twitCreators.add("Evan Williams");
-        apps.add(new Application(R.drawable.twitter,"Twitter",twitCreators,"21 mars 2006",17,"twitter.com","Twitter Inc"));
+        apps.add(new Application(R.drawable.twitter,"Twitter",twitCreators,"21 mars 2006.",17,"twitter.com","Twitter Inc"));
 
         return apps;
 
