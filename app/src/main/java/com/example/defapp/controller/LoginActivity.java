@@ -44,17 +44,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        /*txt_email.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                VectorChildFinder vector = new VectorChildFinder(this, R.drawable.ic_baseline_email_24_focused);
 
-                VectorDrawableCompat.VFullPath path1 = vector.findPathByName("path1");
-                path1.setFillColor(Color.RED);
-
-                return false;
-            }
-        });*/
 
 
     }
@@ -64,17 +54,18 @@ public class LoginActivity extends AppCompatActivity {
 
         String useremail=txt_email.getText().toString().trim();
         String pwd=txt_password.getText().toString().trim();
-        if(pwd.length()<6|| TextUtils.isEmpty(pwd)){
-            Toast.makeText(getApplicationContext(),"Wrong password",Toast.LENGTH_LONG).show();
-            trouve=false;
-        }
+
 
 
         if(TextUtils.isEmpty(useremail)|| Patterns.EMAIL_ADDRESS.matcher(useremail).matches()==false)
         {
-            Toast.makeText(getApplicationContext(),"Wrong email",Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(),Constants.WRONG_EMAIL_MESSAGE,Toast.LENGTH_LONG).show();
             trouve=false;
 
+        }
+        if(pwd.length()<6|| TextUtils.isEmpty(pwd)){
+            Toast.makeText(getApplicationContext(),Constants.WRONG_PASSWORD_MESSAGE,Toast.LENGTH_LONG).show();
+            trouve=false;
         }
         return trouve;
 

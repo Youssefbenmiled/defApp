@@ -14,6 +14,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.defapp.R;
+import com.example.defapp.global.Constants;
 import com.example.defapp.model.Application;
 
 import java.util.ArrayList;
@@ -52,7 +53,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.AppsviewHolder> {
             holder.itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    redirectToDetails(context,position,app,holder);
+                    redirectToDetails(context,app,holder);
 
                 }
             });
@@ -62,32 +63,32 @@ public class Adapter extends RecyclerView.Adapter<Adapter.AppsviewHolder> {
 
         switch(position) {
             case 0:
-                holder.app_name.setTextColor(Color.parseColor("#25D366"));
+                holder.app_name.setTextColor(Color.parseColor(Constants.WHATSAPP_COLOR));
                 break;
             case 1:
-                holder.app_name.setTextColor(Color.parseColor("#4267B2"));
+                holder.app_name.setTextColor(Color.parseColor(Constants.FACEBOOK_COLOR));
                 break;
             case 2:
-                holder.app_name.setTextColor(Color.parseColor("#E1306C"));
+                holder.app_name.setTextColor(Color.parseColor(Constants.INSTAGRAM_COLOR));
                 break;
             case 3:
-                holder.app_name.setTextColor(Color.parseColor("#FFFC00"));
+                holder.app_name.setTextColor(Color.parseColor(Constants.SNAPCHAT_COLOR));
                 break;
             case 4:
-                holder.app_name.setTextColor(Color.parseColor("#000000"));
+                holder.app_name.setTextColor(Color.parseColor(Constants.UBER_COLOR));
                 break;
             case 5:
-                holder.app_name.setTextColor(Color.parseColor("#FF0000"));
+                holder.app_name.setTextColor(Color.parseColor(Constants.YOUTUBE_COLOR));
                 break;
             case 6:
-                holder.app_name.setTextColor(Color.parseColor("#1DA1F2"));
+                holder.app_name.setTextColor(Color.parseColor(Constants.TWITTER_COLOR));
                 break;
 
 
         }
     }
 
-    private void redirectToDetails(Context context, int position, Application app, AppsviewHolder holder) {
+    private void redirectToDetails(Context context, Application app, AppsviewHolder holder) {
         Intent intent=new Intent(context, DetailsActivity.class);
         Bundle b=new Bundle();
         b.putInt("appImage",app.getImageView());
