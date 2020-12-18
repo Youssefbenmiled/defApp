@@ -50,7 +50,6 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private Boolean verifyUser() {
-        Boolean trouve=true;
 
         String useremail=txt_email.getText().toString().trim();
         String pwd=txt_password.getText().toString().trim();
@@ -60,14 +59,14 @@ public class LoginActivity extends AppCompatActivity {
         if(TextUtils.isEmpty(useremail)|| Patterns.EMAIL_ADDRESS.matcher(useremail).matches()==false)
         {
             Toast.makeText(getApplicationContext(),Constants.WRONG_EMAIL_MESSAGE,Toast.LENGTH_LONG).show();
-            trouve=false;
+            return false;
 
         }
         if(pwd.length()<6|| TextUtils.isEmpty(pwd)){
             Toast.makeText(getApplicationContext(),Constants.WRONG_PASSWORD_MESSAGE,Toast.LENGTH_LONG).show();
-            trouve=false;
+            return false;
         }
-        return trouve;
+        return true;
 
 
     }
