@@ -44,18 +44,24 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private Boolean verifyUser() {
+        Boolean trouve=true;
 
-        boolean verif=true;
         String useremail=txt_email.getText().toString().trim();
         String pwd=txt_password.getText().toString().trim();
-
-
-        if(pwd.length()<6 || TextUtils.isEmpty(pwd) ||TextUtils.isEmpty(useremail)|| Patterns.EMAIL_ADDRESS.matcher(useremail).matches()==false)
-        {
-            Toast.makeText(getApplicationContext(),"Wrong user data",Toast.LENGTH_LONG).show();
-            verif=false;
+        if(pwd.length()<6|| TextUtils.isEmpty(pwd)){
+            Toast.makeText(getApplicationContext(),"Wrong password",Toast.LENGTH_LONG).show();
+            trouve=false;
         }
-        return verif;
+
+
+        if(TextUtils.isEmpty(useremail)|| Patterns.EMAIL_ADDRESS.matcher(useremail).matches()==false)
+        {
+            Toast.makeText(getApplicationContext(),"Wrong email",Toast.LENGTH_LONG).show();
+            trouve=false;
+
+        }
+        return trouve;
+
 
     }
 
