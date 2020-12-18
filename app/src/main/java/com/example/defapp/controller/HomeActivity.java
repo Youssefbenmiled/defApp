@@ -99,7 +99,7 @@ public class HomeActivity extends AppCompatActivity {
 
         whatsappCreators.add("Jan Koum");
         whatsappCreators.add("Brian Acton");
-        apps.add(new Application(R.drawable.wahtsapp,"WhatsApp",whatsappCreators,"3 mai 2009.",1,"whatsapp.com","WhatsApp Inc. (propriété de Facebook1)"));
+        apps.add(new Application(R.drawable.wahtsapp,"WhatsApp",whatsappCreators,"3 mai 2009.",1,"whatsapp.com","WhatsApp Inc. (propriété de Facebook)"));
 
 
         faceCreators.add("Mark Zuckerberg");

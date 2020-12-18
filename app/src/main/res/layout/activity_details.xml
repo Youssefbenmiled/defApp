@@ -14,6 +14,7 @@
 
 
     <RelativeLayout
+        android:background="@drawable/grad"
         android:id="@+id/first_relative_layout"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -24,7 +25,6 @@
             android:layout_marginTop="20dp"
             android:id="@+id/rv_container"
             android:layout_centerHorizontal="true"
-
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
@@ -46,7 +46,7 @@
             android:layout_below="@id/rv_container"
             android:text="appname"
             android:textSize="32sp"
-            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
             android:layout_centerHorizontal="true"
             />
     </RelativeLayout>
@@ -83,7 +83,8 @@
                     android:id="@+id/tv_creators"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="text2"/>
+                    android:textColor="@color/darkerGray"
+                    android:text="CreatorsList"/>
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -105,6 +106,8 @@
                     android:id="@+id/tv_createdate"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/darkerGray"
+
                     android:text="Date"/>
                 <View
                     android:layout_width="match_parent"
@@ -127,6 +130,8 @@
                     android:id="@+id/tv_entreprise"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/darkerGray"
+
                     android:text="entreprise"/>
                 <View
                     android:layout_width="match_parent"
@@ -149,6 +154,8 @@
                     android:id="@+id/tv_website"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/darkerGray"
+
                     android:text="website"/>
                 <View
                     android:layout_width="match_parent"
@@ -171,6 +178,7 @@
                     android:id="@+id/tv_ranking"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/darkerGray"
                     android:text="Ranking"/>
                 <View
                     android:layout_width="match_parent"
