@@ -2,15 +2,19 @@ package com.example.defapp.controller;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Patterns;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.vectordrawable.graphics.drawable.VectorDrawableCompat;
+
 import com.example.defapp.R;
 import com.example.defapp.global.Constants;
 
@@ -39,6 +43,18 @@ public class LoginActivity extends AppCompatActivity {
                 }
             }
         });
+
+        /*txt_email.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                VectorChildFinder vector = new VectorChildFinder(this, R.drawable.ic_baseline_email_24_focused);
+
+                VectorDrawableCompat.VFullPath path1 = vector.findPathByName("path1");
+                path1.setFillColor(Color.RED);
+
+                return false;
+            }
+        });*/
 
 
     }
