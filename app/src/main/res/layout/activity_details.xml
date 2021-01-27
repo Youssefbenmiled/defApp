@@ -14,7 +14,6 @@
 
 
     <RelativeLayout
-        android:background="@drawable/grad"
         android:id="@+id/first_relative_layout"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"

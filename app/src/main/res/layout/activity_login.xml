@@ -21,7 +21,7 @@
     <ImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:src="@drawable/ic_baseline_lock_24"
+        android:src="@drawable/ic_user"
         android:background="@drawable/circle"
         app:layout_constraintBottom_toBottomOf="@id/img_login"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -44,22 +44,22 @@
             android:layout_height="50dp"
             android:hint="@string/email"
             android:inputType="textEmailAddress"
-            android:drawablePadding="10dp"
+            android:drawablePadding="12dp"
             android:paddingStart="15dp"
-            android:background="@drawable/user_input"
-            android:drawableLeft="@drawable/user_email_icon"
+            android:drawableStart="@drawable/custom_email_icon"
+            android:background="@drawable/custom_input"
 
             />
 
         <EditText
-            android:background="@drawable/user_input"
             android:id="@+id/et_password"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:background="@drawable/custom_input"
             android:layout_marginTop="10dp"
             android:hint="@string/password"
-            android:drawableLeft="@drawable/user_lock_icon"
-            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/custom_lock_login_icon"
+            android:drawablePadding="12dp"
             android:paddingStart="15dp"
             android:inputType="textPassword" />
     </LinearLayout>

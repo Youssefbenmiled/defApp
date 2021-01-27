@@ -12,7 +12,7 @@
         android:id="@+id/tv_disconnect"
         android:layout_alignParentEnd="true"
         android:text="@string/logout"
-        android:drawableLeft="@drawable/ic_baseline_logout_24"
+        android:drawableLeft="@drawable/ic_logout"
         android:drawablePadding="10dp"
         android:layout_marginTop="3dp"
         android:layout_marginRight="5dp"
