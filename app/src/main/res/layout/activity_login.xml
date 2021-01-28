@@ -75,7 +75,7 @@
         android:layout_marginTop="35dp"
         android:text="@string/signin"
         android:textSize="20sp"
-        android:backgroundTint="@color/lightBlueColor"
+        android:backgroundTint="@color/darkerBlue"
         android:layout_height="wrap_content"/>
 
 
