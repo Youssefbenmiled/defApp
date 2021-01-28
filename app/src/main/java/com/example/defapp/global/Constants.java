@@ -4,7 +4,7 @@ public class Constants {
     public static final String SHARED_PREFERENCE_NAME="SHARED_PREF_NAME";
     public static final String USER_CONNECTED="USER_CONNECTION";
     public static final int SPLASH_DISPLAY_TIME = 3000;
-    public static final String WRONG_PASSWORD_MESSAGE = "Wrong user password ";
+    public static final String WRONG_PASSWORD_MESSAGE = "User password is at least 6 charachters";
     public static final String WRONG_EMAIL_MESSAGE = "Wrong user email";
     public static final String WHATSAPP_COLOR = "#25D366";
     public static final String FACEBOOK_COLOR = "#4267B2";

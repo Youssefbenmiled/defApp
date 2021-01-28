@@ -7,7 +7,7 @@
     tools:context=".controller.SplashActivity">
     <ImageView
         android:id="@+id/img_splash"
-        android:layout_width="200dp"
+        android:layout_width="120dp"
         android:layout_height="match_parent"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
@@ -15,7 +15,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:src="@drawable/socialapps"/>
+        android:src="@drawable/splashapps"/>
 
     <TextView
         android:id="@+id/tv_title_app"
